@@ -4,17 +4,16 @@ description: >-
   A Predictable State Container for JavaScript Apps.
 type: Index
 image: https://redux.js.org/img/redux-logo-landscape.png
-url: 
-  https://raw.githubusercontent.com/api-evangelist/redux/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/redux/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-03-16'
 specificationVersion: '0.19'
 tags:
-  - state management
-  - javascript
-  - frontend
-  - predictable state
-  - flux architecture
+  - Flux Architecture
+  - Frontend
+  - Javascript
+  - Predictable State
+  - State Management
 apis:
   - name: Redux Core API
     description: >-
@@ -23,10 +22,10 @@ apis:
     baseURL: https://redux.js.org
     humanURL: https://redux.js.org
     tags:
-      - state management
-      - store
-      - reducers
-      - actions
+      - Actions
+      - Reducers
+      - State Management
+      - Store
     properties:
       - type: Documentation
         url: https://redux.js.org/introduction/getting-started
@@ -45,10 +44,10 @@ apis:
     baseURL: https://react-redux.js.org
     humanURL: https://react-redux.js.org
     tags:
-      - react
-      - bindings
-      - hooks
-      - components
+      - Bindings
+      - Components
+      - Hooks
+      - React
     properties:
       - type: Documentation
         url: https://react-redux.js.org/introduction/getting-started
@@ -67,10 +66,10 @@ apis:
     baseURL: https://redux-toolkit.js.org
     humanURL: https://redux-toolkit.js.org
     tags:
-      - toolkit
-      - redux toolkit
-      - rtk
-      - simplified redux
+      - Redux Toolkit
+      - Rtk
+      - Simplified Redux
+      - Toolkit
     properties:
       - type: Documentation
         url: https://redux-toolkit.js.org/introduction/getting-started
@@ -85,23 +84,21 @@ apis:
   - name: Redux DevTools API
     description: >-
       Developer tools for debugging Redux applications.
-    image: 
-      https://github.com/reduxjs/redux-devtools/raw/main/extension/docs/design/logo.png
+    image: https://github.com/reduxjs/redux-devtools/raw/main/extension/docs/design/logo.png
     baseURL: https://github.com/reduxjs/redux-devtools
     humanURL: https://github.com/reduxjs/redux-devtools
     tags:
-      - devtools
-      - debugging
-      - time travel
-      - browser extension
+      - Browser Extension
+      - Debugging
+      - Devtools
+      - Time Travel
     properties:
       - type: Documentation
         url: https://github.com/reduxjs/redux-devtools/blob/main/README.md
       - type: GitHub Repository
         url: https://github.com/reduxjs/redux-devtools
       - type: Chrome Extension
-        url: 
-          https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+        url: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
       - type: Firefox Extension
         url: https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/
 maintainers:
