@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.github.io/redux/json-schema/redux-store-schema.json",
+  "title": "Redux Store",
+  "description": "Schema representing the Redux store configuration and state tree structure used in Redux applications.",
+  "type": "object",
+  "properties": {
+    "state": {
+      "description": "The current immutable state tree of the application.",
+      "type": "object",
+      "additionalProperties": true
+    },
+    "reducer": {
+      "description": "A pure function that takes the current state and an action as arguments and returns a new state result.",
+      "type": "string",
+      "examples": ["rootReducer", "combineReducers({...})"]
+    },
+    "middleware": {
+      "description": "Array of middleware functions applied to the store for intercepting actions.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Middleware function name"
+      },
+      "examples": [["redux-thunk", "redux-logger", "redux-saga"]]
+    },
+    "enhancers": {
+      "description": "Store enhancers that extend the store with additional capabilities.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["state"]
+}

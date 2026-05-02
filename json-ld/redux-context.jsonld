@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "redux": "https://redux.js.org/vocabulary#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:softwareVersion",
+    "license": "schema:license",
+    "Store": {
+      "@id": "redux:Store",
+      "@type": "@id",
+      "description": "The Redux store that holds the application state tree."
+    },
+    "state": {
+      "@id": "redux:state",
+      "description": "The current immutable state tree of the Redux store."
+    },
+    "Action": {
+      "@id": "redux:Action",
+      "@type": "@id",
+      "description": "A plain object that describes a state change in the Redux store."
+    },
+    "actionType": {
+      "@id": "redux:actionType",
+      "@type": "xsd:string",
+      "description": "The type identifier for a Redux action."
+    },
+    "payload": {
+      "@id": "redux:payload",
+      "description": "The data carried by a Redux action."
+    },
+    "Reducer": {
+      "@id": "redux:Reducer",
+      "@type": "@id",
+      "description": "A pure function that specifies how the application state changes in response to actions."
+    },
+    "Middleware": {
+      "@id": "redux:Middleware",
+      "@type": "@id",
+      "description": "An extension to the Redux dispatch mechanism providing a third-party extension point."
+    },
+    "Selector": {
+      "@id": "redux:Selector",
+      "@type": "@id",
+      "description": "A function that computes derived data from the Redux state tree."
+    },
+    "Slice": {
+      "@id": "redux:Slice",
+      "@type": "@id",
+      "description": "A Redux Toolkit abstraction combining initial state, reducers, and action creators for a feature domain."
+    },
+    "dispatch": {
+      "@id": "redux:dispatch",
+      "description": "The Redux store method that triggers a state change by sending an action."
+    },
+    "subscribe": {
+      "@id": "redux:subscribe",
+      "description": "The Redux store method for registering a listener on state changes."
+    },
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "programmingLanguage": "schema:programmingLanguage",
+    "codeRepository": "schema:codeRepository"
+  }
+}

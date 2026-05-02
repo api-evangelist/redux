@@ -1,0 +1,79 @@
+{
+  "name": "Redux Store",
+  "description": "Structural documentation for the Redux store and its associated concepts.",
+  "version": "5.0",
+  "structure": {
+    "store": {
+      "description": "The central Redux store object created by createStore() or configureStore().",
+      "methods": {
+        "getState": {
+          "description": "Returns the current state tree of your application.",
+          "returns": "object"
+        },
+        "dispatch": {
+          "description": "Dispatches an action. This is the only way to trigger a state change.",
+          "parameters": {
+            "action": "Action | ThunkAction"
+          },
+          "returns": "Action"
+        },
+        "subscribe": {
+          "description": "Adds a change listener called any time an action is dispatched.",
+          "parameters": {
+            "listener": "() => void"
+          },
+          "returns": "() => void (unsubscribe function)"
+        },
+        "replaceReducer": {
+          "description": "Replaces the reducer currently used by the store.",
+          "parameters": {
+            "nextReducer": "(state, action) => state"
+          }
+        }
+      }
+    },
+    "reducer": {
+      "description": "A pure function that takes the previous state and an action and returns the next state.",
+      "signature": "(state: State | undefined, action: Action) => State",
+      "rules": [
+        "Must be a pure function (no side effects)",
+        "Must not mutate the state argument",
+        "Must return the initial state when called with undefined state",
+        "Must return the current state for unknown action types"
+      ]
+    },
+    "action": {
+      "description": "A plain object describing a state change.",
+      "requiredFields": ["type"],
+      "optionalFields": ["payload", "error", "meta"]
+    },
+    "actionCreator": {
+      "description": "A function that creates and returns an action object.",
+      "types": {
+        "plain": "() => Action",
+        "thunk": "(dispatch, getState) => void | Promise",
+        "rtk": "createAction() result"
+      }
+    },
+    "selector": {
+      "description": "A function that extracts and derives data from the Redux state.",
+      "types": {
+        "plain": "(state: State) => Value",
+        "memoized": "createSelector() result from reselect"
+      }
+    },
+    "middleware": {
+      "description": "A higher-order function that extends Redux with custom functionality.",
+      "signature": "(store) => (next) => (action) => result"
+    },
+    "slice": {
+      "description": "A Redux Toolkit concept combining a reducer and its action creators.",
+      "properties": {
+        "name": "string (slice name / action prefix)",
+        "initialState": "State",
+        "reducers": "object of case reducer functions",
+        "extraReducers": "function for handling external actions"
+      }
+    }
+  }
+}

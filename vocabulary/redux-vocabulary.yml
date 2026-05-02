@@ -1,0 +1,338 @@
+name: Redux Vocabulary
+description: >-
+  Normative vocabulary for the Redux state management library ecosystem,
+  covering core concepts, patterns, and terminology used in Redux applications.
+version: '5.0'
+modified: '2026-05-02'
+source: https://redux.js.org
+terms:
+  - term: Action
+    definition: >-
+      A plain JavaScript object that represents an intention to change the
+      state. Actions are the only way to get data into the store. Every action
+      must have a type field that indicates the type of action being performed.
+    related:
+      - Action Creator
+      - Dispatch
+      - Reducer
+    tags:
+      - Core Concept
+
+  - term: Action Creator
+    definition: >-
+      A function that creates and returns an action object. Calling an action
+      creator does not dispatch an action — you need to call dispatch() with
+      the result to trigger a state change.
+    related:
+      - Action
+      - Dispatch
+    tags:
+      - Core Concept
+
+  - term: Action Type
+    definition: >-
+      A string constant that identifies the kind of action being performed.
+      By convention written in SCREAMING_SNAKE_CASE for plain Redux or
+      as "sliceName/actionName" in Redux Toolkit.
+    examples:
+      - INCREMENT
+      - USER_FETCH_SUCCEEDED
+      - todos/addTodo
+    tags:
+      - Core Concept
+
+  - term: Async Thunk
+    definition: >-
+      A Redux Toolkit utility (createAsyncThunk) that generates action
+      creators for asynchronous operations. Automatically dispatches
+      pending, fulfilled, and rejected action types based on the promise
+      lifecycle.
+    related:
+      - Thunk
+      - Redux Toolkit
+    tags:
+      - Redux Toolkit
+      - Async
+
+  - term: Case Reducer
+    definition: >-
+      In Redux Toolkit, a function in the reducers field of createSlice
+      that handles a specific action type. Case reducers receive the
+      current state as a draft that can be mutated directly thanks to Immer.
+    related:
+      - Slice
+      - Immer
+    tags:
+      - Redux Toolkit
+
+  - term: Combined Reducer
+    definition: >-
+      A root reducer created with combineReducers() that splits the state
+      tree into multiple domain slices and delegates handling of each
+      slice to a separate reducer function.
+    related:
+      - Reducer
+      - State Slice
+    tags:
+      - Core Concept
+
+  - term: Dispatch
+    definition: >-
+      A function of the Redux store that sends an action to the reducer to
+      trigger a state change. Middleware can wrap dispatch to intercept
+      actions and handle async logic.
+    related:
+      - Action
+      - Store
+      - Middleware
+    tags:
+      - Core Concept
+
+  - term: Entity Adapter
+    definition: >-
+      A Redux Toolkit utility (createEntityAdapter) that provides
+      standardized CRUD reducers and selectors for normalized data
+      collections identified by a unique key.
+    related:
+      - Normalization
+      - Redux Toolkit
+    tags:
+      - Redux Toolkit
+
+  - term: Epic
+    definition: >-
+      In the redux-observable library, a function that takes a stream of
+      actions and returns a stream of actions using RxJS observables.
+      Epics are the primary mechanism for handling async side effects.
+    related:
+      - Middleware
+      - Side Effect
+    tags:
+      - Redux Observable
+
+  - term: Flux Standard Action (FSA)
+    definition: >-
+      A human-friendly standard for Redux action objects. An FSA action has
+      a type field, an optional payload field containing action data, an
+      optional error boolean, and an optional meta field.
+    related:
+      - Action
+    tags:
+      - Standard
+      - Best Practice
+
+  - term: Hydration
+    definition: >-
+      The process of initializing the Redux store with pre-existing state,
+      typically used in server-side rendering to pass state from the server
+      to the client for initial store population.
+    related:
+      - Store
+      - Server-Side Rendering
+    tags:
+      - Pattern
+
+  - term: Immer
+    definition: >-
+      A library used internally by Redux Toolkit that enables writing
+      immutable state updates with mutable-style code. Immer uses Proxy
+      objects to track mutations and produce a new immutable state.
+    related:
+      - Redux Toolkit
+      - Reducer
+    tags:
+      - Redux Toolkit
+      - Dependency
+
+  - term: Middleware
+    definition: >-
+      A higher-order function that extends Redux by providing a third-party
+      extension point between dispatching an action and the moment it reaches
+      the reducer. Used for logging, crash reporting, async API calls, routing,
+      and other side effects.
+    related:
+      - Thunk
+      - Dispatch
+      - Store Enhancer
+    tags:
+      - Core Concept
+
+  - term: Mutation
+    definition: >-
+      A direct modification of an existing object or array. Redux reducers
+      must never mutate state; they must return a new state object. Redux
+      Toolkit case reducers can write mutating logic safely through Immer.
+    related:
+      - Reducer
+      - Immer
+    tags:
+      - Core Concept
+
+  - term: Normalization
+    definition: >-
+      Storing each entity type in a single location (keyed by ID) and
+      referencing them by ID in other parts of the state, avoiding nested
+      structures and duplication. Recommended for relational or nested data.
+    related:
+      - Entity Adapter
+      - Selector
+    tags:
+      - Pattern
+
+  - term: Reducer
+    definition: >-
+      A pure function that takes the current state and an action as
+      arguments and returns a new state result. It specifies how the
+      application state changes in response to actions. Must never
+      mutate the state argument and must return the initial state when
+      called with undefined.
+    related:
+      - Action
+      - State
+      - Pure Function
+    tags:
+      - Core Concept
+
+  - term: Redux DevTools
+    definition: >-
+      Developer tooling for Redux that enables time-travel debugging,
+      action history inspection, state diff visualization, and action
+      replay. Available as a browser extension and standalone package.
+    related:
+      - Time Travel
+      - Store Enhancer
+    tags:
+      - Tooling
+
+  - term: Redux Toolkit (RTK)
+    definition: >-
+      The official recommended approach for writing Redux logic. Simplifies
+      common Redux tasks including store setup, reducer creation, immutable
+      update logic, and async workflows. Includes configureStore, createSlice,
+      createAsyncThunk, createEntityAdapter, and RTK Query.
+    related:
+      - Slice
+      - Async Thunk
+      - RTK Query
+    tags:
+      - Tooling
+      - Official
+
+  - term: RTK Query
+    definition: >-
+      An advanced data fetching and caching tool included with Redux Toolkit.
+      Provides automatic cache management, deduplication of requests, polling,
+      and optimistic updates, reducing the amount of async logic needed in
+      Redux applications.
+    related:
+      - Redux Toolkit
+      - Async Thunk
+    tags:
+      - Redux Toolkit
+      - Data Fetching
+
+  - term: Saga
+    definition: >-
+      In the redux-saga library, a generator function that describes a
+      side effect (async operation, API call, etc.) in a synchronous-looking
+      style. Sagas run as background tasks and respond to dispatched actions.
+    related:
+      - Middleware
+      - Side Effect
+    tags:
+      - Redux Saga
+
+  - term: Selector
+    definition: >-
+      A function that computes derived data from the Redux state, allowing
+      Redux to store the minimal possible state. Memoized selectors created
+      with createSelector (Reselect) only recompute when their input values change.
+    related:
+      - Reselect
+      - State
+    tags:
+      - Core Concept
+      - Performance
+
+  - term: Side Effect
+    definition: >-
+      Any interaction with the outside world from a Redux application, such
+      as AJAX calls, accessing localStorage, or writing to the DOM. Must be
+      handled outside pure reducers using middleware (thunks, sagas, epics).
+    related:
+      - Middleware
+      - Thunk
+      - Saga
+    tags:
+      - Core Concept
+
+  - term: Slice
+    definition: >-
+      A Redux Toolkit function (createSlice) that accepts an initial state,
+      an object of reducer functions, and a slice name, and automatically
+      generates action creators and action types corresponding to the reducers.
+    related:
+      - Reducer
+      - Action Creator
+      - Redux Toolkit
+    tags:
+      - Redux Toolkit
+      - Core Concept
+
+  - term: State
+    definition: >-
+      The single immutable data structure that holds all of an application's
+      data in a Redux store. Also called the state tree. Can only be changed
+      by dispatching actions that are processed by reducers.
+    related:
+      - Store
+      - Reducer
+    tags:
+      - Core Concept
+
+  - term: Store
+    definition: >-
+      An object that holds the application's state tree. There should be
+      only one store per Redux application. The store provides getState(),
+      dispatch(), subscribe(), and replaceReducer() methods.
+    related:
+      - State
+      - Dispatch
+      - Reducer
+    tags:
+      - Core Concept
+
+  - term: Store Enhancer
+    definition: >-
+      A higher-order function that composes a store creator to return a new,
+      enhanced store creator. Used to add capabilities to the store such as
+      middleware or time-travel debugging.
+    related:
+      - Middleware
+      - Redux DevTools
+    tags:
+      - Advanced
+
+  - term: Thunk
+    definition: >-
+      A function that is returned from an action creator instead of an
+      action object. The Redux Thunk middleware intercepts thunks and calls
+      them with dispatch and getState, enabling async logic in action creators.
+    related:
+      - Middleware
+      - Action Creator
+      - Async Thunk
+    tags:
+      - Core Concept
+      - Async
+
+  - term: Time Travel Debugging
+    definition: >-
+      The ability to move backward and forward through the history of
+      dispatched actions and state changes in a Redux application. Enabled
+      by the Redux DevTools Extension.
+    related:
+      - Redux DevTools
+      - Immutability
+    tags:
+      - Debugging
