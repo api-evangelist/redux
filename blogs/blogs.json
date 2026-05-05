@@ -1,0 +1,13 @@
+{
+  "repo": "redux",
+  "feeds": [
+    {
+      "source": "https://blog.isquaredsoftware.com/",
+      "feed_url": "https://blog.isquaredsoftware.com/index.xml",
+      "saved": 10,
+      "title": "Mark's Dev Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:34:40Z"
+}
