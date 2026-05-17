@@ -45,7 +45,7 @@ apis:
     properties:
       - type: Documentation
         url: https://redux.js.org/introduction/getting-started
-      - type: ApiReference
+      - type: APIReference
         url: https://redux.js.org/api/api-reference
       - type: GitHubRepository
         url: https://github.com/reduxjs/redux
@@ -53,7 +53,7 @@ apis:
         url: https://www.npmjs.com/package/redux
       - type: TypeScript
         url: https://redux.js.org/usage/usage-with-typescript
-      - type: Changelog
+      - type: ChangeLog
         url: https://github.com/reduxjs/redux/releases
       - type: License
         url: https://github.com/reduxjs/redux/blob/master/LICENSE.md
@@ -76,7 +76,7 @@ apis:
     properties:
       - type: Documentation
         url: https://react-redux.js.org/introduction/getting-started
-      - type: ApiReference
+      - type: APIReference
         url: https://react-redux.js.org/api/hooks
       - type: GitHubRepository
         url: https://github.com/reduxjs/react-redux
@@ -84,7 +84,7 @@ apis:
         url: https://www.npmjs.com/package/react-redux
       - type: Tutorials
         url: https://react-redux.js.org/tutorials/quick-start
-      - type: Changelog
+      - type: ChangeLog
         url: https://github.com/reduxjs/react-redux/releases
   - name: Redux Toolkit API
     description: >-
@@ -107,7 +107,7 @@ apis:
     properties:
       - type: Documentation
         url: https://redux-toolkit.js.org/introduction/getting-started
-      - type: ApiReference
+      - type: APIReference
         url: https://redux-toolkit.js.org/api/configureStore
       - type: GitHubRepository
         url: https://github.com/reduxjs/redux-toolkit
@@ -117,7 +117,7 @@ apis:
         url: https://redux-toolkit.js.org/rtk-query/overview
       - type: Tutorials
         url: https://redux-toolkit.js.org/tutorials/quick-start
-      - type: Changelog
+      - type: ChangeLog
         url: https://github.com/reduxjs/redux-toolkit/releases
   - name: Redux DevTools API
     description: >-
