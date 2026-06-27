@@ -240,7 +240,7 @@ common:
     url: https://stackoverflow.com/questions/tagged/redux
   - type: StyleGuide
     url: https://redux.js.org/style-guide/style-guide
-  - type: Faq
+  - type: FAQ
     url: https://redux.js.org/faq
   - type: Tutorials
     url: https://redux.js.org/tutorials/essentials/part-1-overview-concepts
