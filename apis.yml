@@ -11,6 +11,18 @@ description: >-
   debugging. Redux is widely used with React but can be paired with any
   JavaScript view library.
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://redux.js.org/img/redux-logo-landscape.png
 url: https://raw.githubusercontent.com/api-evangelist/redux/refs/heads/main/apis.yml
 created: '2024-01-15'
