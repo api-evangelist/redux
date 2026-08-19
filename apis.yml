@@ -27,7 +27,7 @@ image: https://redux.js.org/img/redux-logo-landscape.png
 url: https://raw.githubusercontent.com/api-evangelist/redux/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-05-02'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 tags:
   - Flux Architecture
   - Frontend
