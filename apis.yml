@@ -31,6 +31,14 @@ specificationVersion: '0.23'
 tags:
   - Flux Architecture
   - Frontend
+  - JavaScript
+  - Predictable State
+  - React
+  - State Management
+  - TypeScript
+tags_raw:
+  - Flux Architecture
+  - Frontend
   - Javascript
   - Predictable State
   - React
@@ -142,6 +150,11 @@ apis:
     baseURL: https://github.com/reduxjs/redux-devtools
     humanURL: https://github.com/reduxjs/redux-devtools
     tags:
+      - Browser Extension
+      - Debugging
+      - DevTools
+      - Time Travel
+    tags_raw:
       - Browser Extension
       - Debugging
       - Devtools
