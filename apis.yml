@@ -11,6 +11,17 @@ description: >-
   debugging. Redux is widely used with React but can be paired with any
   JavaScript view library.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -251,6 +262,12 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: IssueTracker
+    url: https://github.com/reduxjs/redux/issues
+  - type: CodeOfConduct
+    url: https://github.com/reduxjs/redux/blob/master/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/reduxjs/redux/blob/master/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/redux-domain-security.yml
   - type: Website
