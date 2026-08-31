@@ -42,11 +42,11 @@ specificationVersion: '0.23'
 tags:
   - Flux Architecture
   - Frontend
-  - JavaScript
+  - Javascript
   - Predictable State
   - React
   - State Management
-  - TypeScript
+  - Typescript
 tags_raw:
   - Flux Architecture
   - Frontend
@@ -163,7 +163,7 @@ apis:
     tags:
       - Browser Extension
       - Debugging
-      - DevTools
+      - Devtools
       - Time Travel
     tags_raw:
       - Browser Extension
