@@ -12,15 +12,20 @@ description: >-
   JavaScript view library.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: MIT
+  license_evidence:
+    repo: reduxjs/redux
+    spdx: MIT
+    stars: 61487
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -65,7 +70,6 @@ apis:
       store, which processes them through pure reducer functions to produce the
       next immutable state tree.
     image: https://redux.js.org/img/redux-logo-landscape.png
-    baseURL: https://redux.js.org
     humanURL: https://redux.js.org
     tags:
       - Actions
