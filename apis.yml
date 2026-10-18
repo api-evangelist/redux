@@ -167,13 +167,14 @@ apis:
     tags:
       - Browser Extension
       - Debugging
-      - DevTools
+      - Developer Tools
       - Time Travel
     tags_raw:
       - Browser Extension
       - Debugging
       - Devtools
       - Time Travel
+      - DevTools
     properties:
       - type: Documentation
         url: https://github.com/reduxjs/redux-devtools/blob/main/README.md
