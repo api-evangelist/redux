@@ -64,128 +64,141 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. The Redux ecosystem includes React Redux for React bindings, Redux Toolkit for simplified development, and Redux DevTools for time-travel debugging.
+Redux is a predictable state container for JavaScript apps. It helps write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. Redux provides a single immutable state tree, pure reducer functions for state transitions, and a unidirectional data flow pattern based on the Flux architecture. The Redux ecosystem includes React Redux for React bindings, Redux Toolkit for simplified development patterns, and Redux DevTools for time-travel debugging. Redux is widely used with React but can be paired with any JavaScript view library.
 
-**Human URL:** [https://redux.js.org](https://redux.js.org)
+**Areas:** Flux Architecture · Frontend · JavaScript · Predictable State · React · State Management · TypeScript
 
-**GitHub Organization:** [https://github.com/reduxjs](https://github.com/reduxjs)
+## Redux on APIs.io
 
-## Tags
+Everything profiled for Redux is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/redux/](https://apis.io/providers/redux/)** — or go straight to one of the APIs or properties below.
 
-- State Management
-- Javascript
-- Frontend
-- Predictable State
-- Flux Architecture
-- React
-- Typescript
+### APIs (8)
 
-## APIs
+- [Redux Core API](https://apis.io/apis/redux/redux-core-api/) — Core Redux library for managing application state through a predictable unidirectional data flow. The library exposes createStore, combineReducers,…
+- [React Redux API](https://apis.io/apis/redux/react-redux-api/) — Official React bindings for Redux, enabling React components to interact with a Redux store. Provides hooks (useSelector, useDispatch, useStore) and a…
+- [Redux Toolkit API](https://apis.io/apis/redux/redux-toolkit-api/) — The official, opinionated, batteries-included toolset for efficient Redux development. Redux Toolkit simplifies common Redux use cases including store…
+- [Redux DevTools API](https://apis.io/apis/redux/redux-devtools-api/) — Developer tools for debugging Redux applications with time-travel debugging capabilities. The Redux DevTools Extension allows inspection of every state and…
+- [Redux Saga](https://apis.io/apis/redux/redux-saga/) — A Redux middleware library that aims to make application side effects such as asynchronous data fetching and accessing browser caches easier to manage and…
+- [Redux Observable](https://apis.io/apis/redux/redux-observable/) — RxJS-based middleware for Redux. Compose and cancel async actions to create side effects and more using Epics. An epic is a function which takes a stream of…
+- [Redux Thunk](https://apis.io/apis/redux/redux-thunk/) — Thunk middleware for Redux, included by default with Redux Toolkit. Allows writing action creators that return a function instead of an action object,…
+- [Reselect](https://apis.io/apis/redux/reselect/) — A selector library for Redux. Selectors are functions that compute derived data from the Redux state, allowing Redux to store the minimal possible state.…
 
-### Redux Core API
-Core Redux library providing createStore, combineReducers, applyMiddleware, compose, and bindActionCreators.
+### Published properties
 
-**URL:** [https://redux.js.org](https://redux.js.org)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- [Documentation](https://redux.js.org/introduction/getting-started)
-- [API Reference](https://redux.js.org/api/api-reference)
-- [GitHub Repository](https://github.com/reduxjs/redux)
-- [npm Package](https://www.npmjs.com/package/redux)
+#### JSON Schema (2)
 
-### React Redux API
-Official React bindings for Redux with hooks (useSelector, useDispatch) and Provider component.
+The data models the API reads and writes.
 
-**URL:** [https://react-redux.js.org](https://react-redux.js.org)
+- [Redux Action](https://apis.io/schemas/redux/redux-action/)
+- [Redux Store](https://apis.io/schemas/redux/redux-store/)
 
-- [Documentation](https://react-redux.js.org/introduction/getting-started)
-- [API Reference](https://react-redux.js.org/api/hooks)
-- [GitHub Repository](https://github.com/reduxjs/react-redux)
-- [npm Package](https://www.npmjs.com/package/react-redux)
+#### JSON Structure (1)
 
-### Redux Toolkit API
-The official, batteries-included toolset with configureStore, createSlice, createAsyncThunk, and RTK Query.
+Data models expressed in JSON Structure.
 
-**URL:** [https://redux-toolkit.js.org](https://redux-toolkit.js.org)
+- [Redux Store Structure](https://apis.io/json-structure/redux/redux-store-structure/)
 
-- [Documentation](https://redux-toolkit.js.org/introduction/getting-started)
-- [API Reference](https://redux-toolkit.js.org/api/configureStore)
-- [GitHub Repository](https://github.com/reduxjs/redux-toolkit)
-- [npm Package](https://www.npmjs.com/package/@reduxjs/toolkit)
-- [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+#### JSON-LD (1)
 
-### Redux DevTools API
-Developer tools for time-travel debugging and action/state inspection.
+Linked-data contexts for the provider's vocabulary.
 
-**URL:** [https://github.com/reduxjs/redux-devtools](https://github.com/reduxjs/redux-devtools)
+- [Redux Context](https://apis.io/jsonld/redux/redux-context/)
 
-- [Documentation](https://github.com/reduxjs/redux-devtools/blob/main/README.md)
-- [GitHub Repository](https://github.com/reduxjs/redux-devtools)
-- [Chrome Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
-- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
+#### Vocabulary (1)
 
-### Redux Saga
-Middleware for managing async side effects using ES6 Generators.
+The provider's domain terms, defined.
 
-- [Documentation](https://redux-saga.js.org/docs/introduction/GettingStarted)
-- [GitHub Repository](https://github.com/redux-saga/redux-saga)
+- [Redux Vocabulary](https://apis.io/vocabularies/redux/redux-vocabulary/)
 
-### Redux Observable
-RxJS-based middleware for composing async actions as observable streams.
+#### Governance rules (1)
 
-- [Documentation](https://redux-observable.js.org/docs/basics/Epics.html)
-- [GitHub Repository](https://github.com/redux-observable/redux-observable)
+Spectral rulesets for the provider's contracts.
 
-### Redux Thunk
-Thunk middleware enabling action creators that return functions for async logic.
+- [Redux — jsonschema rules](https://apis.io/rules/redux/redux-jsonschema-spectral-rules/)
 
-- [GitHub Repository](https://github.com/reduxjs/redux-thunk)
+#### Security (1)
 
-### Reselect
-Memoized selector library for computing derived data from Redux state.
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://reselect.js.org/)
-- [GitHub Repository](https://github.com/reduxjs/reselect)
+- [Redux Domain Security](https://apis.io/security/redux/redux-domain-security/)
 
-## Artifacts
+#### Plans and pricing (1)
 
-### JSON Schema
+Published plans, tiers and prices.
 
-| Schema | Description |
-|--------|-------------|
-| [Redux Store Schema](json-schema/redux-store-schema.json) | Schema for Redux store configuration and state tree |
-| [Redux Action Schema](json-schema/redux-action-schema.json) | Flux Standard Action schema for Redux action objects |
+- [Redux Plans Pricing](https://apis.io/plans/redux/redux-plans-pricing/)
 
-### JSON Structure
+#### Rate limits (1)
 
-| Structure | Description |
-|-----------|-------------|
-| [Redux Store Structure](json-structure/redux-store-structure.json) | Structural documentation for the Redux store API surface |
+Published request limits.
 
-### JSON-LD
+- [Redux Rate Limits](https://apis.io/rate-limits/redux/redux-rate-limits/)
 
-| Context | Description |
-|---------|-------------|
-| [Redux Context](json-ld/redux-context.jsonld) | JSON-LD context mapping Redux vocabulary to schema.org |
+#### FinOps (1)
 
-### Vocabulary
+What the API costs to run, by operation.
 
-| Vocabulary | Description |
-|------------|-------------|
-| [Redux Vocabulary](vocabulary/redux-vocabulary.yml) | Normative vocabulary for Redux concepts, patterns, and terminology |
+- [Redux Finops](https://apis.io/finops/redux/redux-finops/)
 
-## Common Properties
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://redux.js.org)
-- [GitHub Organization](https://github.com/reduxjs)
 - [Blog](https://blog.isquaredsoftware.com/)
-- [Community](https://discord.gg/redux)
-- [Twitter](https://twitter.com/reduxjs)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/redux)
-- [Style Guide](https://redux.js.org/style-guide/style-guide)
-- [FAQ](https://redux.js.org/faq)
-- [Tutorials](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+- [GitHub](https://github.com/reduxjs)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 25.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 14.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/redux/](https://apis.io/providers/redux/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Redux: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/redux/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
